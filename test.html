@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Root Colors</title>
+    <style>
+      /* Define root colors */
+      :root {
+        --primary-color: #3498db; /* Blue */
+        --secondary-color: #2ecc71; /* Green */
+        --text-color: #ffffff; /* White */
+      }
+
+      /* Apply colors */
+      body {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        color: var(--secondary-color);
+      }
+
+      a {
+        color: var(--text-color);
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: var(--secondary-color);
+        border-radius: 5px;
+      }
+
+      a:hover {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to My Website</h1>
+    <p>This is an example of using root colors in CSS.</p>
+    <a href="#">Click Here</a>
+  </body>
+</html>
