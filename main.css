@@ -1,33 +1,108 @@
 :root {
-  --green: green;
+  --orange: #fea301;
+  --blue: #01acfd;
+  --aqua: #05d4df;
+  --purple: #5d58ef;
+}
+body {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bold;
+}
+.btn {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 60px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: calc(1rem + 4px);
+  font-weight: 400;
 }
 
+/*------------------------*/
 /*container*/
-.container {
-  background-color: var(--green);
+body {
+  max-width: 1300px;
+  margin: auto;
 }
 
 /*nav*/
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
+.logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.logo img {
+  width: 55px;
+  height: 55px;
+}
+
+.logo-text {
+  font-size: 32px;
+}
+
 .menu ul {
   display: flex;
 }
 .menu ul li {
   list-style: none;
 }
-.menu {
-  border: 3px solid blue;
+.menu ul li:first-child a {
+  color: var(--orange);
 }
+.menu ul li:nth-child(2) a {
+  color: var(--blue);
+}
+.menu ul li:nth-child(3) a {
+  color: var(--aqua);
+}
+.menu ul li:last-child a {
+  color: var(--purple);
+}
+
 .menu a {
   text-decoration: none;
-  margin-right: 2rem; /*usually html=16px. So, 2rem=16*2=32px*/
+  margin-right: 2rem;
+  /*usually html=16px. So, 2rem=16*2=32px*/
+  font-size: calc(1rem + 4px);
+  font-weight: 500 !important;
+}
+.contact-btn > .btn {
+  background-color: var(--orange);
 }
 
 /*header*/
+header {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.empower > h2 {
+  /* font-size: 48px; */
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.empowering-text {
+  color: var(--orange);
+}
+.towards-text {
+  color: var(--blue);
+}
+.empower p {
+  font-size: calc(1rem + 4px);
+  font-weight: 400;
+}
+.enroll-btn {
+  background-color: black;
+}
 
 /*curriculum*/
 
