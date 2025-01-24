@@ -8,7 +8,6 @@ body {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-weight: bold;
 }
 .btn {
   border: none;
@@ -17,7 +16,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(237, 228, 228);
   font-size: calc(1rem + 4px);
   font-weight: 400;
 }
@@ -75,8 +74,11 @@ nav {
   font-size: calc(1rem + 4px);
   font-weight: 500 !important;
 }
-.contact-btn > .btn {
+.contact-btn .btn {
   background-color: var(--orange);
+}
+.contact-btn .btn a {
+  color: white;
 }
 
 /*header*/
@@ -105,6 +107,83 @@ header {
 }
 
 /*curriculum*/
+.curriculum h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+}
+.curriculum-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(2rem - 4px);
+}
+.c-block-1,
+.c-block-2,
+.c-block-3 {
+  text-align: center;
+}
+.curriculum-block h4 {
+  font-size: calc(1rem + 9px) !important;
+}
+.curriculum-block p {
+  font-size: 1rem;
+  font-weight: 200px;
+  color: #808080;
+}
+.curriculum-block img {
+  width: 35%;
+  height: 30%;
+}
+.curriculum-block .c-block-1 a {
+  color: var(--blue);
+  font-size: 15px;
+}
+.curriculum-block .c-block-2 a {
+  color: var(--orange);
+  font-size: 15px;
+}
+.curriculum-block .c-block-3 a {
+  color: var(--purple);
+  font-size: 15px;
+}
+.slideshow-arrow {
+  display: grid;
+  grid-template-columns: repeat(2, 1rem);
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 3rem;
+}
+.slideshow-arrow span {
+  border-radius: 50%;
+  background-color: var(--orange);
+  color: white;
+  padding: calc(1rem) calc(1rem + 6px);
+  font-weight: 800;
+}
+.curriculum-block div {
+  border-radius: calc(1rem + 1.26px);
+}
+.curriculum-block > div:first-child {
+  background: linear-gradient(to bottom, #def5ff, transparent, 50%, white 200%);
+  padding: 3rem;
+  border-radius: calc(1rem + 2.86px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 6px 6px rgba(0, 0, 0, 0.05);
+}
+
+.curriculum-block > div:nth-child(2) {
+  background: linear-gradient(to bottom, #fff4dc, transparent, 50%, white 200%);
+  padding: 3rem;
+  border-radius: calc(1rem + 2.86px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 6px 6px rgba(0, 0, 0, 0.05);
+}
+
+.curriculum-block > div:last-child {
+  background: linear-gradient(to bottom, #eee1ff, transparent, 50%, white 200%);
+  padding: 3rem;
+  border-radius: calc(1rem + 2.86px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 6px 6px rgba(0, 0, 0, 0.05);
+}
 
 /*stories*/
 
