@@ -23,9 +23,19 @@ a {
 
 /*------------------------*/
 /*container*/
-body {
+/* .container {
   max-width: 1300px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
+} */
+.nav_container,
+.header_container,
+.curriculum,
+.stories,
+.footer_grid_block {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 /*nav*/
@@ -196,18 +206,23 @@ header {
 /*FOR GRID AREA START*/
 .one_fun {
   grid-area: one_fun;
+  position: relative;
 }
 .two_find {
   grid-area: two_find;
+  position: relative;
 }
 .three_summer {
   grid-area: three_summer;
+  position: relative;
 }
 .four_classroom {
   grid-area: four_classroom;
+  position: relative;
 }
 .five_conversation {
   grid-area: five_conversation;
+  position: relative;
 }
 .for_grid_area {
   display: grid;
@@ -227,7 +242,7 @@ div p {
   padding: 0.5rem 0 0 0.5rem;
 }
 
-/* .one_fun img, */
+/* .one_fun_block */
 .two_find img,
 .three_summer img,
 .four_classroom img,
@@ -242,14 +257,16 @@ div p {
   font-size: 15.34px;
   font-weight: 300;
   color: #808080;
+  padding-top: 0;
 }
 
 .for_grid_area > div:nth-child(2) h5,
 .for_grid_area > div:nth-child(3) h5,
 .for_grid_area > div:nth-child(4) h5,
-.for_grid_area > div:nth-child(5) h5 {
+.for_grid_area > div:last-child h5 {
   font-size: 15.34px;
-  text-align: center;
+  text-align: left;
+  padding: 0px 45px 38px 15px;
 }
 .stories_btn {
   margin: 80px 0 60px 0;
@@ -258,17 +275,57 @@ div p {
 .stories_btn button {
   background-color: black;
 }
-.for_grid_area > div:first-child h6 {
+.one_fun h6 {
   background-color: var(--aqua);
   color: white;
   border-radius: 3rem;
-  font-size: 14px;
+  font-size: 15.34px;
   font-weight: 200;
-  width: 30%;
-  height: 7%;
+  width: 44%;
+  height: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 373px;
+  right: 198px;
+}
+.two_find h6,
+.three_summer h6,
+.four_classroom h6,
+.five_conversation h6 {
+  background-color: #95b226;
+  color: white;
+  border-radius: 3rem;
+  font-size: 15.34px;
+  font-weight: 200;
+  width: 50%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 158px;
+  right: 165px;
 }
 
 /*footer*/
+footer {
+  background-color: #01acfd;
+  margin: 0; /* Ensure no external margins */
+  padding: 0; /* Ensure no internal padding */
+}
+body,
+footer {
+  margin: 0;
+  padding: 0;
+}
+footer > * {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
