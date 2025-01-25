@@ -295,8 +295,8 @@ div p {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 377px;
-  right: 554px;
+  top: 427px;
+  right: 678px;
 }
 .two_find h6,
 .three_summer h6,
@@ -313,7 +313,7 @@ div p {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 158px;
+  top: 185px;
   right: 165px;
 }
 /* golden gradient just before footer section */
@@ -370,10 +370,10 @@ footer {
   color: white;
 }
 
-/* Image absolute overall body */
+/* Image absolute to the overall body */
 .absolute_img_1 {
   position: absolute;
-  top: 137%;
+  top: 130%;
   right: 2%;
   opacity: 0.1;
   transform: rotate(45deg);
@@ -382,8 +382,8 @@ footer {
 }
 .absolute_img_2 {
   position: absolute;
-  top: 186%;
-  right: 83%;
+  top: 50%;
+  right: 53%;
   opacity: 0.1;
   transform: rotate(182deg);
   width: 9%;
@@ -391,9 +391,101 @@ footer {
 }
 .absolute_img_3 {
   position: absolute;
-  top: 286%;
+  top: 250%;
   right: 3%;
   opacity: 0.5;
   transform: rotate(46deg);
   width: 9%;
+}
+
+/* Responsive Starts */
+@media (max-width: 576px) {
+  /* Universal */
+  .absolute_img_1,
+  .absolute_img_2,
+  .absolute_img_3 {
+    display: none;
+  }
+  button {
+    border-radius: 8px !important;
+    padding: 8px 28px !important;
+  }
+  button > a {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 30px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
+  /* nav */
+  .logo {
+    display: flex !important;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .menu,
+  .contact-btn {
+    display: none;
+  }
+
+  /* header */
+  .header_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-kids {
+    order: -1; /*for bringing the image from top to bottom*/
+  }
+  .hero-kids > img {
+    width: 300px;
+  }
+  .empower {
+    text-align: center;
+  }
+  .empower h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .empower p {
+    font-size: 1rem;
+  }
+
+  /* standard curriclum */
+  .curriculum-block {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Stories */
+  .one_fun {
+    display: none;
+  }
+  .for_grid_area {
+    grid-template-areas:
+      "two_find        three_summer"
+      "three_summer    three_summer"
+      "four_classroom  five_conversation";
+  }
+  .for_grid_area h6 {
+    display: none;
+  }
+
+  /* Footer */
+  .footer_grid_block {
+    display: block;
+  }
+  .about_school_2 h4,
+  .keep_touch_3 h4 {
+    font-size: 25px;
+  }
+  .about_school_2 ul li a {
+    font-size: 16px;
+  }
+  footer {
+    padding-bottom: 50px;
+  }
 }
