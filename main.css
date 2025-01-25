@@ -8,7 +8,10 @@ body {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-style: normal;
+  margin: 0;
+  padding: 0;
 }
+
 .btn {
   border: none;
   border-radius: 12px;
@@ -22,12 +25,7 @@ a {
 }
 
 /*------------------------*/
-/*container*/
-/* .container {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0;
-} */
+
 .nav_container,
 .header_container,
 .curriculum,
@@ -207,22 +205,32 @@ header {
 .one_fun {
   grid-area: one_fun;
   position: relative;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 6px 6px rgba(0, 0, 0, 0.05);
 }
 .two_find {
   grid-area: two_find;
   position: relative;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 6px 6px rgba(0, 0, 0, 0.05);
 }
 .three_summer {
   grid-area: three_summer;
   position: relative;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 6px 6px rgba(0, 0, 0, 0.05);
 }
 .four_classroom {
   grid-area: four_classroom;
   position: relative;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 6px 6px rgba(0, 0, 0, 0.05);
 }
 .five_conversation {
   grid-area: five_conversation;
   position: relative;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 6px 6px rgba(0, 0, 0, 0.05);
 }
 .for_grid_area {
   display: grid;
@@ -235,7 +243,6 @@ header {
 .for_grid_area div {
   border-radius: 1rem;
   overflow: hidden;
-  background-color: red;
 }
 .for_grid_area > div h5,
 div p {
@@ -274,6 +281,7 @@ div p {
 }
 .stories_btn button {
   background-color: black;
+  margin-top: 2rem;
 }
 .one_fun h6 {
   background-color: var(--aqua);
@@ -281,14 +289,14 @@ div p {
   border-radius: 3rem;
   font-size: 15.34px;
   font-weight: 200;
-  width: 44%;
+  width: 28%;
   height: 5%;
-  display: flex;
+  display: flex; /*shudhumatro justify-content: center deoar jonno display:flex dichi*/
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 373px;
-  right: 198px;
+  top: 377px;
+  right: 554px;
 }
 .two_find h6,
 .three_summer h6,
@@ -301,31 +309,91 @@ div p {
   font-weight: 200;
   width: 50%;
   height: 8%;
-  display: flex;
+  display: flex; /*shudhumatro justify-content: center deoar jonno display:flex dichi*/
   align-items: center;
   justify-content: center;
   position: absolute;
   top: 158px;
   right: 165px;
 }
+/* golden gradient just before footer section */
+.gradient_color {
+  background: linear-gradient(to top, #fea10174, transparent 50%, white 600%);
+  padding-bottom: 5rem;
+}
 
 /*footer*/
 footer {
   background-color: #01acfd;
-  margin: 0; /* Ensure no external margins */
-  padding: 0; /* Ensure no internal padding */
-}
-body,
-footer {
   margin: 0;
+  padding: 124px 0 179px 0;
+}
+.footer_grid_block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10%;
+}
+.footer_logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2%;
+}
+.footer_logo img {
+  width: 20%;
+}
+.footer_logo h4 {
+  font-size: 2rem;
+  color: white;
+  margin: 0px;
+}
+.kids_education_1 p {
+  color: white;
+}
+.about_school_2 h4 {
+  font-size: calc(1rem + 8px);
+  color: white;
+}
+.about_school_2 ul {
   padding: 0;
 }
-footer > * {
-  margin: 0;
-  padding: 0;
+.about_school_2 ul li {
+  list-style: none;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.about_school_2 ul li a {
+  font-size: calc(1rem+1px);
+  font-weight: 300;
+  line-height: 2rem;
+}
+.keep_touch_3 h4 {
+  font-size: calc(1rem + 8px);
+  color: white;
+}
+
+/* Image absolute overall body */
+.absolute_img_1 {
+  position: absolute;
+  top: 137%;
+  right: 2%;
+  opacity: 0.1;
+  transform: rotate(45deg);
+  width: 9%;
+  z-index: -9999;
+}
+.absolute_img_2 {
+  position: absolute;
+  top: 186%;
+  right: 83%;
+  opacity: 0.1;
+  transform: rotate(182deg);
+  width: 9%;
+  z-index: 999;
+}
+.absolute_img_3 {
+  position: absolute;
+  top: 286%;
+  right: 3%;
+  opacity: 0.5;
+  transform: rotate(46deg);
+  width: 9%;
 }
