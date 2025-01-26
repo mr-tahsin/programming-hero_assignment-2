@@ -220,6 +220,12 @@ header {
   background-color: white;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 6px 6px rgba(0, 0, 0, 0.05);
 }
+.three_summer_new_1 {
+  display: none;
+}
+.three_summer_new_2 {
+  display: none;
+}
 .four_classroom {
   grid-area: four_classroom;
   position: relative;
@@ -464,11 +470,26 @@ footer {
   .one_fun {
     display: none;
   }
+  .three_summer_new_1 {
+    grid-area: three_summer_new_1;
+    display: block;
+    background-color: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
+      0px 6px 6px rgba(0, 0, 0, 0.05);
+  }
+  .three_summer_new_2 {
+    grid-area: three_summer_new_2;
+    display: block;
+    background-color: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
+      0px 6px 6px rgba(0, 0, 0, 0.05);
+  }
   .for_grid_area {
+    display: grid;
     grid-template-areas:
-      "two_find        three_summer"
-      "three_summer    three_summer"
-      "four_classroom  five_conversation";
+      "two_find              three_summer"
+      "three_summer_new_1    three_summer_new_2"
+      "four_classroom         five_conversation";
   }
   .for_grid_area h6 {
     display: none;
